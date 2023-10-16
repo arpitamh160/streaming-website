@@ -1,0 +1,313 @@
+[
+  {
+    "id": 1,
+    "thumbnail": "https://fastly.picsum.photos/id/142/4272/2848.jpg?hmac=z8IS_an6FQ8ijJOBd-wSVg1JTZbeIDG4TbjHwLQbs0I",
+    "saved": false,
+    "year": 2022,
+    "category": "Movie",
+    "movieName": "Uncharted",
+    "popular": true,
+    "genre": "Comedy"
+  },
+  {
+    "id": 2,
+    "thumbnail": "https://fastly.picsum.photos/id/143/3600/2385.jpg?hmac=gSMmnYrmuP5BJ47kmErfYdYu1L1GLePM1SNm-D2lqiA",
+    "saved": false,
+    "year": 2022,
+    "category": "Movie",
+    "movieName": "The Batman",
+    "popular": true,
+    "genre": "Family"
+  },
+  {
+    "id": 3,
+    "thumbnail": "https://fastly.picsum.photos/id/144/4912/2760.jpg?hmac=pMOciMOb_baom6Llz91g42ZAqJP7Gi2Y1AfA37zfh_s",
+    "saved": false,
+    "year": 2022,
+    "category": "Movie",
+    "movieName": "Black Panther",
+    "popular": true,
+    "genre": "Action"
+  },
+  {
+    "id": 4,
+    "thumbnail": "https://fastly.picsum.photos/id/145/4288/2848.jpg?hmac=UkhcwQUE-vRBFXzDN1trCwWigpm7MXG5Bl5Ji103QG4",
+    "saved": false,
+    "year": 2022,
+    "category": "Movie",
+    "movieName": "The Outfit",
+    "popular": true,
+    "genre": "Comedy"
+  },
+  {
+    "id": 5,
+    "thumbnail": "https://fastly.picsum.photos/id/146/5000/3333.jpg?hmac=xdlFnzoavokA3U-bzo35Vk4jTBKx8C9fqH5IuCPXj2U",
+    "saved": false,
+    "year": 2022,
+    "category": "Movie",
+    "movieName": "SpiderMan",
+    "popular": false,
+    "genre": "Family"
+  },
+  {
+    "id": 6,
+    "thumbnail": "https://fastly.picsum.photos/id/147/2448/2448.jpg?hmac=Xk6y7EeyG6VQTac1N9IhDAwLVNVeCn_KBN4nO5SRxPw",
+    "saved": false,
+    "year": 2022,
+    "category": "Movie",
+    "movieName": "Friends",
+    "popular": false,
+    "genre": "Comedy"
+  },
+  {
+    "id": 7,
+    "thumbnail": "https://fastly.picsum.photos/id/149/3454/2288.jpg?hmac=JoHMBHymDuk59QWHK89nquWAXE4Su1mF07OKdvmpN3g",
+    "saved": false,
+    "year": 2022,
+    "category": "Movie",
+    "movieName": "Vacation Friends",
+    "popular": false,
+    "genre": "Comedy"
+  },
+  {
+    "id": 8,
+    "thumbnail": "https://fastly.picsum.photos/id/152/3888/2592.jpg?hmac=M1xv1MzO9xjf5-tz1hGR9bQpNt973ANkqfEVDW0-WYU",
+    "saved": false,
+    "year": 2022,
+    "category": "Movie",
+    "movieName": "Thomas & Friends",
+    "popular": false,
+    "genre": "Action"
+  },
+  {
+    "id": 9,
+    "thumbnail": "https://fastly.picsum.photos/id/153/4763/3155.jpg?hmac=GvglcvSHy1CSmpkqqF-7VSPsc67CmYQZ1CY-do9rh_A",
+    "saved": false,
+    "year": 2022,
+    "category": "Movie",
+    "movieName": "Garfield and Friends",
+    "popular": true,
+    "genre": "Action"
+  },
+  {
+    "id": 10,
+    "thumbnail": "https://fastly.picsum.photos/id/154/3264/2176.jpg?hmac=a4Q6dBKGy7G27ic7K1sEPr-KzMigvl-MQsZUEX9iFxM",
+    "saved": false,
+    "year": 2022,
+    "category": "Movie",
+    "movieName": "Talking Tom and Friends",
+    "popular": false,
+    "genre": "Action"
+  },
+  {
+    "id": 11,
+    "thumbnail": "https://fastly.picsum.photos/id/155/3264/2176.jpg?hmac=Zgf_oGMJeg18XoKBFmJgp2DgHMRYuorXlDx5wLII9nU",
+    "saved": false,
+    "year": 2022,
+    "category": "Movie",
+    "movieName": "Barney and Friends",
+    "popular": false,
+    "genre": "Comedy"
+  },
+  {
+    "id": 12,
+    "thumbnail": "https://fastly.picsum.photos/id/158/4836/3224.jpg?hmac=Gu_3j3HxZgR74iw1sV0wcwlnSZSeCi7zDWLcjblOp_c",
+    "saved": false,
+    "year": 2022,
+    "category": "Movie",
+    "movieName": "Barbie",
+    "popular": false,
+    "genre": "Comedy"
+  },
+  {
+    "id": 13,
+    "thumbnail": "https://fastly.picsum.photos/id/159/5000/2460.jpg?hmac=h12oeFVhY4-vOrALaICJ4k4dqemWn1lvaMN8yvnIU1w",
+    "saved": false,
+    "year": 2022,
+    "category": "Movie",
+    "movieName": "The Last ship",
+    "popular": false,
+    "genre": "Comedy"
+  },
+  {
+    "id": 14,
+    "thumbnail": "https://fastly.picsum.photos/id/163/2000/1333.jpg?hmac=htdHeSJwlYOxS8b0TTpz2s8tD_QDlmsd3JHYa_HGrg8",
+    "saved": false,
+    "year": 2022,
+    "category": "Movie",
+    "movieName": "Bahubali-part1",
+    "popular": true,
+    "genre": "Comedy"
+  },
+  {
+    "id": 15,
+    "thumbnail": "https://fastly.picsum.photos/id/164/1200/800.jpg?hmac=wkqGUkaeW3kiAsHq_VwxSWWossIMAwFV4eUfFzuDkew",
+    "saved": false,
+    "year": 2022,
+    "category": "Movie",
+    "movieName": "Bahubali-part2",
+    "popular": true,
+    "genre": "Comedy"
+  },
+  {
+    "id": 16,
+    "thumbnail": "https://fastly.picsum.photos/id/170/2500/1667.jpg?hmac=_-EP0GQDcU9M00VvD5FFfDBbFbmSIjgn_Wi4HJJ65HQ",
+    "saved": false,
+    "year": 2022,
+    "category": "Movie",
+    "movieName": "The Shawshank",
+    "popular": true,
+    "genre": "Comedy"
+  },
+  {
+    "id": 17,
+    "thumbnail":"https://fastly.picsum.photos/id/142/4272/2848.jpg?hmac=z8IS_an6FQ8ijJOBd-wSVg1JTZbeIDG4TbjHwLQbs0I",
+    "saved": false,
+    "year": 2022,
+    "category": "TV Series",
+    "movieName": "Popular TV Show 1",
+    "popular": true,
+    "genre": "Comedy"
+  },
+  {
+    "id": 18,
+    "thumbnail": "https://fastly.picsum.photos/id/142/4272/2848.jpg?hmac=z8IS_an6FQ8ijJOBd-wSVg1JTZbeIDG4TbjHwLQbs0I",
+    "saved": false,
+    "year": 2022,
+    "category": "TV Series",
+    "movieName": "Popular TV Show 2",
+    "popular": true,
+    "genre": "Family"
+  },
+  {
+    "id": 19,
+    "thumbnail":"https://fastly.picsum.photos/id/142/4272/2848.jpg?hmac=z8IS_an6FQ8ijJOBd-wSVg1JTZbeIDG4TbjHwLQbs0I",
+    "saved": false,
+    "year": 2022,
+    "category": "TV Series",
+    "movieName": "Popular TV Show 3",
+    "popular": true,
+    "genre": "Action"
+  },
+  {
+    "id": 20,
+    "thumbnail":"https://fastly.picsum.photos/id/142/4272/2848.jpg?hmac=z8IS_an6FQ8ijJOBd-wSVg1JTZbeIDG4TbjHwLQbs0I",
+    "saved": false,
+    "year": 2022,
+    "category": "TV Series",
+    "movieName": "Non-Popular TV Show 1",
+    "popular": false,
+    "genre": "Comedy"
+  },
+  {
+    "id": 21,
+    "thumbnail": "https://fastly.picsum.photos/id/142/4272/2848.jpg?hmac=z8IS_an6FQ8ijJOBd-wSVg1JTZbeIDG4TbjHwLQbs0I",
+    "saved": false,
+    "year": 2022,
+    "category": "TV Series",
+    "movieName": "Non-Popular TV Show 2",
+    "popular": false,
+    "genre": "Family"
+  },
+  {
+    "id": 22,
+    "thumbnail":"https://fastly.picsum.photos/id/142/4272/2848.jpg?hmac=z8IS_an6FQ8ijJOBd-wSVg1JTZbeIDG4TbjHwLQbs0I",
+    "saved": false,
+    "year": 2022,
+    "category": "TV Series",
+    "movieName": "Non-Popular TV Show 3",
+    "popular": false,
+    "genre": "Action"
+  },
+  {
+    "id": 23,
+    "thumbnail": "https://fastly.picsum.photos/id/142/4272/2848.jpg?hmac=z8IS_an6FQ8ijJOBd-wSVg1JTZbeIDG4TbjHwLQbs0I",
+    "saved": false,
+    "year": 2022,
+    "category": "TV Series",
+    "movieName": "Comedy Series 1",
+    "popular": true,
+    "genre": "Comedy"
+  },
+  {
+    "id": 24,
+    "thumbnail": "https://fastly.picsum.photos/id/142/4272/2848.jpg?hmac=z8IS_an6FQ8ijJOBd-wSVg1JTZbeIDG4TbjHwLQbs0I",
+    "saved": false,
+    "year": 2022,
+    "category": "TV Series",
+    "movieName": "Comedy Series 2",
+    "popular": true,
+    "genre": "Comedy"
+  },
+  {
+    "id": 25,
+    "thumbnail": "https://fastly.picsum.photos/id/142/4272/2848.jpg?hmac=z8IS_an6FQ8ijJOBd-wSVg1JTZbeIDG4TbjHwLQbs0I",
+    "saved": false,
+    "year": 2022,
+    "category": "TV Series",
+    "movieName": "Family Series 1",
+    "popular": true,
+    "genre": "Family"
+  },
+  {
+    "id": 26,
+    "thumbnail": "https://fastly.picsum.photos/id/142/4272/2848.jpg?hmac=z8IS_an6FQ8ijJOBd-wSVg1JTZbeIDG4TbjHwLQbs0I",
+    "saved": false,
+    "year": 2022,
+    "category": "TV Series",
+    "movieName": "Family Series 2",
+    "popular": true,
+    "genre": "Family"
+  },
+  {
+    "id": 27,
+    "thumbnail": "https://fastly.picsum.photos/id/142/4272/2848.jpg?hmac=z8IS_an6FQ8ijJOBd-wSVg1JTZbeIDG4TbjHwLQbs0I",
+    "saved": false,
+    "year": 2022,
+    "category": "TV Series",
+    "movieName": "Action Series 1",
+    "popular": true,
+    "genre": "Action"
+  },
+  {
+    "id": 28,
+    "thumbnail":"https://fastly.picsum.photos/id/142/4272/2848.jpg?hmac=z8IS_an6FQ8ijJOBd-wSVg1JTZbeIDG4TbjHwLQbs0I",
+    "saved": false,
+    "year": 2022,
+    "category": "TV Series",
+    "movieName": "Action Series 2",
+    "popular": true,
+    "genre": "Action"
+  },
+  {
+    "id": 29,
+    "thumbnail": "https://fastly.picsum.photos/id/142/4272/2848.jpg?hmac=z8IS_an6FQ8ijJOBd-wSVg1JTZbeIDG4TbjHwLQbs0I",
+    "saved": false,
+    "year": 2022,
+    "category": "TV Series",
+    "movieName": "Comedy Series 3",
+    "popular": false,
+    "genre": "Comedy"
+  },
+  {
+    "id": 30,
+    "thumbnail":"https://fastly.picsum.photos/id/142/4272/2848.jpg?hmac=z8IS_an6FQ8ijJOBd-wSVg1JTZbeIDG4TbjHwLQbs0I",
+    "saved": false,
+    "year": 2022,
+    "category": "TV Series",
+    "movieName": "Family Series 3",
+    "popular": false,
+    "genre": "Family"
+  },
+  {
+    "id": 31,
+    "thumbnail": "https://fastly.picsum.photos/id/142/4272/2848.jpg?hmac=z8IS_an6FQ8ijJOBd-wSVg1JTZbeIDG4TbjHwLQbs0I",
+    "saved": false,
+    "year": 2022,
+    "category": "TV Series",
+    "movieName": "Action Series 3",
+    "popular": false,
+    "genre": "Action"
+  }
+
+]

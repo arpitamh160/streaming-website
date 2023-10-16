@@ -1,0 +1,22 @@
+ul{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    list-style: none;
+    background: #1D253A;
+    padding: 2.5rem  1.5rem;
+    gap:2.5rem;
+    border-radius: 1rem;
+    margin:0 0 4.94rem;
+}
+
+
+.side-bar{
+    background: #181728;
+}
+
+li:nth-last-child(5),
+li:nth-last-child(1){
+    margin-top: 2.5rem;
+}
+

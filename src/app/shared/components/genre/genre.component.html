@@ -1,0 +1,6 @@
+<div class="genre-buttons">
+    <ng-container *ngFor="let genre of movieGenre; let i = index">
+        <button class="genre" [ngClass]="i % 2 === 0 ? 'column-even' : 'column-odd'" (click)="filterByGenre(genre)">{{
+            genre }}</button>
+    </ng-container>
+</div>

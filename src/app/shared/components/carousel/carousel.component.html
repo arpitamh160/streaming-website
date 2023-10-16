@@ -1,0 +1,18 @@
+<div class="movie-list-container">
+    <img src="/assets/images/previous.png" alt="Previous" (click)="previousMovie()" class="navigation-button">
+    <div class="movie-list">
+      <div *ngFor="let movie of movieList; let i = index" [ngStyle]="{'transform': 'translateX(' + (currentMovieIndex * -1) * 22 + 'rem)'}">
+        <img [src]="movie.thumbnail" alt="{{ movie.movieName }} Thumbnail" class="movie-image">
+        <img src="/assets/images/bookmark.png" class="bookmark-icon" (click)="toggleBookmark(movie)"/>
+        <div class="movie-details">
+          {{ movie.year }}
+          <span class="dot">.</span>
+          <img src="/assets/images/movie.png" alt="movie-image" class="movie-logo">
+          {{ movie.category }}
+        </div>
+        <h2 class="movie-name">{{ movie.movieName }}</h2>
+      </div>
+    </div>
+    <img src="/assets/images/next.png" alt="Next" (click)="nextMovie()" class="navigation-button">
+  </div>
+  

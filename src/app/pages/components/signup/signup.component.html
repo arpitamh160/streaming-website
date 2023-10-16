@@ -1,0 +1,35 @@
+<div class="flex-container signup">
+  <span class="movie-ott">Movie OTT</span>
+  <div class="flex-container register-container">
+    <p class="heading heading-properties">Register</p>
+    <form class="flex-container register-form" (ngSubmit)="signup()">
+      <label for="username" class="text">Full Name
+        <br>
+        <input [(ngModel)]="username" id="username" name="username" placeholder="Full Name" type="text"
+          class="register-input-field" [ngClass]="{ 'error-border': nameError }" required>
+        <div class="error-message">{{nameError}}</div>
+      </label>
+      <label for="useremail" class="text">Email
+        <br>
+        <input [(ngModel)]="email" id="useremail" name="email" placeholder="Email" type="email"
+          class="register-input-field" [ngClass]="{ 'error-border': emailError || signupErrorMessage }" required>
+        <div class="error-message">{{emailError}}</div>
+        <div class="error-message">{{signupErrorMessage}}</div>
+      </label>
+      <label for="password" class="text">Password
+        <br>
+        <input [(ngModel)]="password" placeholder="Password" name="password" type="password"
+          class="register-input-field" [ngClass]="{'error-border': passwordError} " id="password" required>
+        <div class="error-message" [innerHTML]="passwordError">{{passwordError}}</div>
+      </label>
+      <label for="confirm-password" class="text">Confirm Password
+        <br>
+        <input [(ngModel)]="confirmPassword" placeholder="Confirm Password" name="confirmPassword" type="password"
+          class="register-input-field" [ngClass]="{ 'error-border': confirmPasswordError }" id="confirm-password"
+          required>
+        <div class="error-message" [ngStyle]="{ color: 'red' }">{{confirmPasswordError}}</div>
+      </label>
+      <button type="submit" class="form-button form-register-button">Register</button>
+    </form>
+  </div>
+</div>

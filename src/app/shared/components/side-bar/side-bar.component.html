@@ -1,0 +1,21 @@
+<aside class="sidebar">
+    <ul>
+      <li><a routerLink="home"><img src="/assets/images/home.png" alt="home-image"></a></li> 
+      <li><a routerLink="dashboard"><img src="/assets/images/dashboard.png" alt="dashboard-image"></a></li>
+      <li><a routerLink="moviegenre"><img src="/assets/images/movie.png"alt="moviegenre-image"></a></li>
+      <li><a routerLink="tvgenre"><img src="/assets/images/tv-series.png" alt="tvgenre-image"></a></li>
+      <li><a routerLink="bookmarks"><img src="/assets/images/bookmark.png" alt="bookmarks-image"></a></li>
+  
+
+  
+      <li>
+        <img src="assets/images/profile.png" (click)="showOptions =true" alt="profile-image" >
+        <div *ngIf="showOptions" class="options">
+          <button (click)="logout()">Logout</button>
+          <button (click)="cancel()">Cancel</button>
+        </div>
+      
+      </li>
+    </ul>
+  </aside>
+  
