@@ -1,0 +1,47 @@
+<div class="container">
+  <app-search-bar [placeholderText]="'Search for movies'"></app-search-bar>
+  <div *ngIf="movieDetails" class="media-info">
+    <img [src]="'https://image.tmdb.org/t/p/w500/' + movieDetails.poster_path" alt="{{ movieDetails.title }} Poster"
+      class="media-details-image">
+    <div class="media-details">
+      <span class="media-details-name">{{ movieDetails.title }}</span>
+      <span class="detail-title">{{movieDetails.tagline}}</span>
+      <span class="rating">{{movieDetails.vote_average}}</span>
+      <div class="media">
+        <div class="media-details-container">
+          <div class="details-container">
+            <span class="detail-title">Length</span>
+            <span class="detail-discription">{{movieDetails.runtime ? movieDetails.runtime + ' min' : 'N/A'}}.</span>
+          </div>
+          <div class="details-container">
+            <span class="detail-title">Language</span>
+            <span class="detail-discription">{{movieDetails.original_language}}</span>
+          </div>
+          <div class="details-container">
+            <span class="detail-title">Year</span>
+            <span class="detail-discription">{{ getYearFromDate(movieDetails.release_date) }}</span>
+          </div>
+          <div class="details-container">
+            <span class="detail-title">Status</span>
+            <span class="detail-discription">{{movieDetails.status ? movieDetails.status : 'N/A'}}</span>
+          </div>
+        </div>
+        <div class="details-container">
+          <span class="detail-discription">Genres</span>
+          <span class="genre-button-allign">
+            <ng-container *ngFor="let genre of movieDetails.genres">
+              <button class="genre-button">{{ genre.name }}</button>
+            </ng-container>
+          </span>
+        </div>
+        <div class="details-container">
+          <span class="detail-discription">Synopsis</span>
+          <span class="overview">{{ movieDetails.overview }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div *ngIf="!movieDetails">
+    <p>Loading...</p>
+  </div>
+</div>

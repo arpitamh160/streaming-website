@@ -1,0 +1,37 @@
+<app-search-bar [placeholderText]="'Search for movies and tv series'" class="search-bar"></app-search-bar>
+<div class=" genre-list-container">
+    <div class="vertical-display">
+        <div *ngFor="let movie of movieContent; let i = index" class="display-genre-list">
+            <img [src]="isBookmarkedMovie(movie.id) ? '/assets/images/bookmarked.svg' : '/assets/images/bookmark-icon.svg'"
+                (click)="toggleBookmarkMovie(movie)" class="vertical-display-bookmark" />
+            <a [routerLink]="['/home', 'movie-details', movie.id]">
+                <img [src]="'https://image.tmdb.org/t/p/w500/' + movie.poster_path" alt="{{ movie.title }} Thumbnail"
+                    class="media-image">
+            </a>
+            <div class="carousel-media-details">
+                {{ getYearFromDate(movie.release_date) }}
+                <span class="dot">.</span>
+                <img src="/assets/images/movie.svg" alt="movie-image" class="media-logo">
+                <span>Movie</span>
+            </div>
+            <h2 class="media-name">{{ movie.title }}</h2>
+        </div>
+    </div>
+    <div class="vertical-display">
+        <div *ngFor="let tv of tvContent; let i = index" class="display-genre-list">
+            <img [src]="isBookmarkedTv(tv.id) ? '/assets/images/bookmarked.svg' : '/assets/images/bookmark-icon.svg'"
+                (click)="toggleBookmarkTv(tv)" class="vertical-display-bookmark" />
+            <a [routerLink]="['/home', 'tv-details', tv.id]">
+                <img [src]="'https://image.tmdb.org/t/p/w500/' + tv.poster_path" alt="{{ tv.name }} Thumbnail"
+                    class="media-image">
+            </a>
+            <div class="carousel-media-details">
+                {{ getYearFromDate(tv.first_air_date) }}
+                <span class="dot">.</span>
+                <img src="/assets/images/tv-series.svg" alt="movie-image" class="media-logo">
+                <span>Tv</span>
+            </div>
+            <h2 class="media-name">{{ tv.name}}</h2>
+        </div>
+    </div>
+</div>

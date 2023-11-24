@@ -1,0 +1,13 @@
+.search-container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 6rem;
+  gap: 2rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .search-container {
+    padding: 8rem 0 6rem;
+    gap: 1rem;
+  }
+}

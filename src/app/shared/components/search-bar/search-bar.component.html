@@ -1,0 +1,13 @@
+<div class="search-bar-container">
+  <div class="profile-mobile-view">
+    <img src="assets/images/profile-icon.svg" (click)="openDialog()" alt="profile-image" class="logout">
+    <span class="media-name" *ngIf="currentUser">Hello, {{ currentUser.username }}</span>
+  </div>
+  <div class="search-container">
+    <div class="flex-container search-bar">
+      <img src="/assets/images/search.svg" class="search-image">
+      <input type="text" #searchInput [placeholder]="placeholderText" class="search-field">
+    </div>
+    <button class="search-button" (click)="performSearch(searchInput.value)">Search</button>
+  </div>
+</div>

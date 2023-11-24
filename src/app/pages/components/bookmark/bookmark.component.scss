@@ -1,0 +1,15 @@
+.bookmark-container {
+  padding: 7rem 0 6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.display-bookmark {
+  position: relative;
+}
+
+@media screen and (max-width: 1024px) {
+  .bookmark-container {
+    padding-top: 8rem;
+  }
+}

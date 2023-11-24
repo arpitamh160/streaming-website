@@ -1,0 +1,34 @@
+<app-search-bar [placeholderText]="'Search for movies or TV series'" class="search-bar"></app-search-bar>
+<div class="dashboard-container">
+  <div>
+    <div class="movie-container">
+      <h1 class="movie-heading">Trending</h1>
+      <button class="movie-button">Movie</button>
+    </div>
+    <app-carousel [movieContent]="trendingMovies"></app-carousel>
+  </div>
+
+  <div>
+    <div class="movie-container">
+      <h1 class="movie-heading">Popular</h1>
+      <button class="movie-button">Movie</button>
+    </div>
+    <app-carousel [movieContent]="popularMovies"></app-carousel>
+  </div>
+
+  <div>
+    <div class="movie-container">
+      <h1 class="movie-heading">Trending</h1>
+      <button class="movie-button">TV Series</button>
+    </div>
+    <app-carousel [tvContent]="trendingTVSeries"></app-carousel>
+  </div>
+
+  <div>
+    <div class="movie-container">
+      <h1 class="movie-heading">Popular</h1>
+      <button class="movie-button">TV Series</button>
+    </div>
+    <app-carousel [tvContent]="popularTVSeries"></app-carousel>
+  </div>
+</div>

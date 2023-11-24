@@ -1,0 +1,29 @@
+@import '/src/variables';
+
+.logout-container {
+  padding: 0 1rem;
+}
+
+.logout-buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+input[type="file"]::-webkit-file-upload-button,
+button {
+  border-radius: 0.5rem;
+  height: 2rem;
+  width: 5rem;
+  font-size: 1rem;
+  font-family: $base-font-family;
+  cursor: pointer;
+}
+p {
+  font-family: $base-font-family;
+  font-size: 1.5rem;
+  font-weight: 400;
+}

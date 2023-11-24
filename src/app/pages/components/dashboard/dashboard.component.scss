@@ -1,0 +1,32 @@
+@import "/src/variables";
+
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  padding: 6rem 0 4rem;
+}
+
+.movie-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+
+.movie-button {
+  height: 2rem;
+  border-radius: 0.5rem;
+  border: 2px solid #f0e6e6;
+  background: transparent;
+  font-family: $base-font-family;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.07em;
+  color: $white-color;
+}
+
+@media screen and (max-width: 1024px) {
+  .dashboard-container {
+    padding: 8rem 0 6rem;
+  }
+}
