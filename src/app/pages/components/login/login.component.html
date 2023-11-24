@@ -3,7 +3,7 @@
   <div class="flex-container app-container">
     <div class="flex-container left-container">
       <p class="heading">Sign <span>In</span></p>
-      <form class="flex-container login-form" (ngSubmit)="login()">
+      <form class="flex-container login-form" (ngSubmit)="onSubmit()">
         <label for="useremail" class="text form-group">Email
           <br>
           <input [(ngModel)]="email" name="email" placeholder="Email" type="email" class="input-field"
@@ -17,12 +17,11 @@
           <div class="error-message">{{passwordError}}</div>
         </label>
         <button type="submit" class="form-button">Sign In</button>
-
       </form>
     </div>
     <div class="flex-container right-container">
       <p class="heading heading-properties">Welcome to <span class="span-color">Movie OTT</span></p>
-      <img src="assets\images\streaming-logo.png" alt="streaming logo" class="streaming-logo logo-view" />
+      <img src="assets\images\streaming-logo.svg" alt="streaming logo" class="streaming-logo" />
       <p class="text-container"><a routerLink="/signup">New here?</a> Create an account here.</p>
       <button type="submit" class="form-button form-signup-button" routerLink="/signup">Sign Up</button>
     </div>

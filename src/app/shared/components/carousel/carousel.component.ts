@@ -1,25 +1,46 @@
-import { Component, OnInit, Input} from '@angular/core';
-import { MoviesService,Movie} from '../../services/movies-service/movies.service';
+import { Component, Input, HostListener, OnInit } from '@angular/core';
+import { BookmarkService } from 'src/app/pages/services/bookmark/bookmark.service';
+import { MovieContent, TvContent } from 'src/app/pages/services/dashboard/dashboard.service';
 
 @Component({
   selector: 'app-carousel',
   templateUrl: './carousel.component.html',
-  styleUrls: ['./carousel.component.scss']
+  styleUrls: ['./carousel.component.scss'],
 })
 export class CarouselComponent implements OnInit {
-  @Input() movieList: Movie[]=[];
-  
-  currentMovieIndex = 0;
-  constructor(private movieService: MoviesService) { }
+
+  @Input() movieContent: any[] = [];
+  @Input() tvContent: any[] = [];
+  currentMovieIndex: number = 0;
+  currentTvIndex: number = 0;
+  itemsPerSlide: number = 3;
+
+  constructor(private bookmarkService: BookmarkService) { }
 
   ngOnInit() {
-    this.movieService.getMovies().subscribe((movies) => {
-      this.movieList = movies;
-    });
+    this.updateItemsPerSlide();
+  }
+
+  @HostListener('window:resize', ['$event'])
+  onResize(event: Event) {
+    this.updateItemsPerSlide();
+  }
+
+  updateItemsPerSlide() {
+
+    const windowWidth = window.innerWidth;
+    if (windowWidth < 1024) {
+      this.itemsPerSlide = 2;
+    } else {
+      this.itemsPerSlide = 3;
+    }
+
+    this.currentMovieIndex = 0;
+    this.currentTvIndex = 0;
   }
 
   nextMovie() {
-    if (this.currentMovieIndex < this.movieList.length - 1) {
+    if (this.currentMovieIndex < (this.movieContent.length - this.itemsPerSlide)) {
       this.currentMovieIndex++;
     }
   }
@@ -30,18 +51,40 @@ export class CarouselComponent implements OnInit {
     }
   }
 
-  toggleBookmark(movie: any) {
-    if (this.isBookmarked(movie)) {
-      this.movieService.removeBookmark(movie);
-    } else {
-      this.movieService.bookmarkMovie(movie);
+  nextTv() {
+    if (this.currentTvIndex < (this.tvContent.length - this.itemsPerSlide)) {
+      this.currentTvIndex++;
     }
   }
 
-  isBookmarked(movie: any): boolean {
-    return this.movieService.getBookmarkedMovies().includes(movie);
+  previousTv() {
+    if (this.currentTvIndex > 0) {
+      this.currentTvIndex--;
+    }
   }
 
-  
-  
+  isBookmarkedMovie(movieId: number): boolean {
+    const bookmarkedMovies = this.bookmarkService.getBookmarksMovie();
+    return bookmarkedMovies.some((movie) => movie.id === movieId);
+  }
+
+  isBookmarkedTv(tvId: number): boolean {
+    const bookmarkedMovies = this.bookmarkService.getBookmarksTv();
+    return bookmarkedMovies.some((tv) => tv.id === tvId);
+  }
+
+  toggleBookmarkMovie(movie: MovieContent) {
+    this.bookmarkService.toggleBookmarkMovie(movie);
+  }
+
+  toggleBookmarkTv(tv: TvContent) {
+    this.bookmarkService.toggleBookmarkTv(tv);
+  }
+
+  getYearFromDate(fullDate: string): string {
+    const date = new Date(fullDate);
+    const year = date.getFullYear();
+    return year.toString();
+  }
+
 }

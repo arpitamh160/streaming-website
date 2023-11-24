@@ -7,13 +7,11 @@ import { LoginModule } from './pages/modules/login/login.module';
 import { SignupModule } from './pages/modules/signup/signup.module';
 import { HomeModule } from './pages/modules/home/home.module';
 import { HttpClientModule } from '@angular/common/http';
-import { MoviesService } from './shared/services/movies-service/movies.service';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
     AppComponent
-    
   ],
   imports: [
     BrowserModule,
@@ -22,9 +20,10 @@ import { MoviesService } from './shared/services/movies-service/movies.service';
     HttpClientModule,
     LoginModule,
     SignupModule,
-    HomeModule
+    HomeModule,
+    BrowserAnimationsModule
   ],
-  providers: [MoviesService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

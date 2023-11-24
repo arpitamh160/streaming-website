@@ -1,18 +1,46 @@
-<div class="movie-list-container">
-    <img src="/assets/images/previous.png" alt="Previous" (click)="previousMovie()" class="navigation-button">
-    <div class="movie-list">
-      <div *ngFor="let movie of movieList; let i = index" [ngStyle]="{'transform': 'translateX(' + (currentMovieIndex * -1) * 22 + 'rem)'}">
-        <img [src]="movie.thumbnail" alt="{{ movie.movieName }} Thumbnail" class="movie-image">
-        <img src="/assets/images/bookmark.png" class="bookmark-icon" (click)="toggleBookmark(movie)"/>
-        <div class="movie-details">
-          {{ movie.year }}
+<div class="media-list-container">
+  <ng-container *ngIf="movieContent.length > 0;">
+    <div class="media-list">
+      <img src="/assets/images/previous.svg" alt="Previous" (click)="previousMovie()" class="navigation-button">
+      <div *ngFor="let movie of movieContent.slice(currentMovieIndex, currentMovieIndex + itemsPerSlide); let i = index"
+        [ngStyle]="{'transform': 'translateX(' + i * 0 + 'rem)', 'width': (100 / itemsPerSlide) + '%'}">
+        <a [routerLink]="['/home', 'movie-details', movie.id]">
+          <img [src]="'https://image.tmdb.org/t/p/w500/' + movie.poster_path" alt="{{ movie.title }} Thumbnail"
+            class="media-image">
+        </a>
+        <img [src]="isBookmarkedMovie(movie.id) ? '/assets/images/bookmarked.svg' : '/assets/images/bookmark-icon.svg'"
+          (click)="toggleBookmarkMovie(movie)" class="bookmark-icon" />
+        <div class="carousel-media-details">
+          {{ getYearFromDate(movie.release_date) }}
           <span class="dot">.</span>
-          <img src="/assets/images/movie.png" alt="movie-image" class="movie-logo">
-          {{ movie.category }}
+          <img src="/assets/images/movie.svg" alt="movie-image" class="media-logo">
+          <span>Movie</span>
         </div>
-        <h2 class="movie-name">{{ movie.movieName }}</h2>
+        <h2 class="media-name">{{ movie.title }}</h2>
       </div>
+      <img src="/assets/images/next.svg" alt="Next" (click)="nextMovie()" class="navigation-button">
     </div>
-    <img src="/assets/images/next.png" alt="Next" (click)="nextMovie()" class="navigation-button">
-  </div>
-  
+  </ng-container>
+  <ng-container *ngIf="tvContent.length > 0;">
+    <div class="media-list">
+      <img src="/assets/images/previous.svg" alt="Previous" (click)="previousTv()" class="navigation-button">
+      <div *ngFor="let tv of tvContent.slice(currentTvIndex, currentTvIndex + itemsPerSlide); let i = index"
+        [ngStyle]="{'transform': 'translateX(' + i * 0 + 'rem)', 'width': (100 / itemsPerSlide) + '%'}">
+        <a [routerLink]="['/home', 'tv-details', tv.id]">
+          <img [src]="'https://image.tmdb.org/t/p/w500/' + tv.poster_path" alt="{{ tv.name }} Thumbnail"
+            class="media-image">
+        </a>
+        <img [src]="isBookmarkedTv(tv.id) ? '/assets/images/bookmarked.svg' : '/assets/images/bookmark-icon.svg'"
+          (click)="toggleBookmarkTv(tv)" class="bookmark-icon" />
+        <div class="carousel-media-details">
+          {{ getYearFromDate(tv.first_air_date) }}
+          <span class="dot">.</span>
+          <img src="/assets/images/tv-series.svg" alt="movie-image" class="media-logo">
+          <span>Tv</span>
+        </div>
+        <h2 class="media-name">{{ tv.name }}</h2>
+      </div>
+      <img src="/assets/images/next.svg" alt="Next" (click)="nextTv()" class="navigation-button">
+    </div>
+  </ng-container>
+</div>

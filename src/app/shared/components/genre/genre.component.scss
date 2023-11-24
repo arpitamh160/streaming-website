@@ -1,0 +1,55 @@
+@import "/src/variables";
+
+.genre-buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 13rem;
+  grid-column-gap: 2rem;
+  grid-row-gap: 2rem;
+  padding: 7rem 0 6rem;
+}
+
+.genre {
+  font-size: 1.5rem;
+  font-weight: 500;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: $white-color;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.column-even-movie {
+  background: $base-blue;
+}
+
+.column-odd {
+  background: $dark-blue;
+}
+
+.column-even-tv {
+  background: $base-green;
+}
+
+@media screen and (max-width: 1024px) {
+  .genre-buttons {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 10rem 0;
+    grid-auto-rows: 15rem;
+    grid-column-gap: 3rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .genre-buttons {
+    padding: 8rem 0;
+    grid-auto-rows: 9rem;
+    grid-gap: 1.5rem;
+  }
+
+  .genre {
+    font-size: 1.2rem;
+  }
+}

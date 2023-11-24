@@ -1,21 +1,17 @@
-<aside class="sidebar">
-    <ul>
-      <li><a routerLink="home"><img src="/assets/images/home.png" alt="home-image"></a></li> 
-      <li><a routerLink="dashboard"><img src="/assets/images/dashboard.png" alt="dashboard-image"></a></li>
-      <li><a routerLink="moviegenre"><img src="/assets/images/movie.png"alt="moviegenre-image"></a></li>
-      <li><a routerLink="tvgenre"><img src="/assets/images/tv-series.png" alt="tvgenre-image"></a></li>
-      <li><a routerLink="bookmarks"><img src="/assets/images/bookmark.png" alt="bookmarks-image"></a></li>
-  
+<nav class="sidebar">
+  <ul>
+    <li><img src="/assets/images/home.svg" alt="home-image"></li>
+    <li routerLink="/home/dashboard" routerLinkActive="active"><img src="/assets/images/dashboard.svg"
+        alt="dashboard-image"></li>
+    <li routerLink="/home/moviegenre" routerLinkActive="active"><img src="/assets/images/movie.svg"
+        alt="moviegenre-image"></li>
+    <li routerLink="/home/tvgenre" routerLinkActive="active"><img src="/assets/images/tv-series.svg"
+        alt="tvgenre-image"></li>
+    <li routerLink="/home/bookmark" routerLinkActive="active"><img src="/assets/images/bookmark.svg"
+        alt="bookmarks-image"></li>
+    <li>
+      <img src="assets/images/profile-icon.svg" (click)="openDialog()" alt="profile-image">
+    </li>
 
-  
-      <li>
-        <img src="assets/images/profile.png" (click)="showOptions =true" alt="profile-image" >
-        <div *ngIf="showOptions" class="options">
-          <button (click)="logout()">Logout</button>
-          <button (click)="cancel()">Cancel</button>
-        </div>
-      
-      </li>
-    </ul>
-  </aside>
-  
+  </ul>
+</nav>

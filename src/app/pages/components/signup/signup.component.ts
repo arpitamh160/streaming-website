@@ -21,7 +21,7 @@ export class SignupComponent {
   constructor(private userService: UserService, private router: Router) { }
 
   signup(): void {
-    this.resetErrors(); 
+    this.resetErrors();
     if (!this.username) {
       this.nameError = 'Please enter a user name';
       return;
@@ -30,7 +30,7 @@ export class SignupComponent {
       this.emailError = 'Please enter a valid email address.';
       return;
     }
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+[^\s@]+$/;
+    const emailRegex = /^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,}$/;
     if (!emailRegex.test(this.email)) {
       this.emailError = 'Invalid email address';
       return;
@@ -63,11 +63,11 @@ export class SignupComponent {
   }
 
   resetErrors() {
-    this.nameError='';
+    this.nameError = '';
     this.emailError = '';
     this.passwordError = '';
     this.signupErrorMessage = '';
-    this.confirmPasswordError='';
+    this.confirmPasswordError = '';
 
   }
 }

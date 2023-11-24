@@ -1,0 +1,6 @@
+<p class="result" *ngIf="!isPageNotFound">
+    No results found for the search '<span class="query"> {{ searchQuery }} </span>'.
+</p>
+<p class="result" *ngIf="isPageNotFound">
+    Page not found.
+</p>

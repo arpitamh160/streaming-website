@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { UserService } from 'src/app/shared/services/user-service/user.service';
 import { Router } from '@angular/router';
 
@@ -7,18 +7,23 @@ import { Router } from '@angular/router';
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.scss']
 })
-export class LoginComponent {
+
+export class LoginComponent implements OnInit {
   email: string = '';
   password: string = '';
   emailError: string = '';
   passwordError: string = '';
-  
 
-  constructor(private userService: UserService, private router: Router) {}
+  constructor(private userService: UserService, private router: Router) { }
 
-  login() {
+  ngOnInit(): void {
+    localStorage.setItem('isloggedIn', "false");
+  }
+
+  onSubmit() {
     this.emailError = '';
     this.passwordError = '';
+
     if (!this.email || !this.password) {
       if (!this.email) {
         this.emailError = 'Please enter your email.';
@@ -28,14 +33,12 @@ export class LoginComponent {
       }
       return;
     }
-    const isLoggedIn = this.userService.login(this.email, this.password);
+    const isLoggedIn = this.userService.isLoggedIn(this.email, this.password);
 
     if (isLoggedIn) {
-      localStorage.setItem("isloggedIn","true")
       this.router.navigate(['/home']);
-    }else {
+    } else {
       this.passwordError = 'Invalid email or password';
-      localStorage.setItem("isloggedIn","false")
     }
   }
 

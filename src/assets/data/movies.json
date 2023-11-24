@@ -26,7 +26,7 @@
     "year": 2022,
     "category": "Movie",
     "movieName": "Black Panther",
-    "popular": true,
+    "popular": false,
     "genre": "Action"
   },
   {
@@ -165,7 +165,7 @@
     "saved": false,
     "year": 2022,
     "category": "TV Series",
-    "movieName": "Popular TV Show 1",
+    "movieName": " Song of Bandits",
     "popular": true,
     "genre": "Comedy"
   },
@@ -175,139 +175,378 @@
     "saved": false,
     "year": 2022,
     "category": "TV Series",
-    "movieName": "Popular TV Show 2",
-    "popular": true,
+    "movieName": "Squid Game",
+    "popular": false,
     "genre": "Family"
   },
   {
     "id": 19,
-    "thumbnail":"https://fastly.picsum.photos/id/142/4272/2848.jpg?hmac=z8IS_an6FQ8ijJOBd-wSVg1JTZbeIDG4TbjHwLQbs0I",
+    "thumbnail":"https://fastly.picsum.photos/id/10/2500/1667.jpg?hmac=J04WWC_ebchx3WwzbM-Z4_KC_LeLBWr5LZMaAkWkF68",
     "saved": false,
     "year": 2022,
     "category": "TV Series",
-    "movieName": "Popular TV Show 3",
+    "movieName": "The Wheel Of Time",
     "popular": true,
-    "genre": "Action"
+    "genre": "Action & Adventure"
   },
   {
     "id": 20,
-    "thumbnail":"https://fastly.picsum.photos/id/142/4272/2848.jpg?hmac=z8IS_an6FQ8ijJOBd-wSVg1JTZbeIDG4TbjHwLQbs0I",
+    "thumbnail":"https://fastly.picsum.photos/id/14/2500/1667.jpg?hmac=ssQyTcZRRumHXVbQAVlXTx-MGBxm6NHWD3SryQ48G-o",
     "saved": false,
     "year": 2022,
     "category": "TV Series",
-    "movieName": "Non-Popular TV Show 1",
+    "movieName": "Prison Break",
     "popular": false,
     "genre": "Comedy"
   },
   {
     "id": 21,
-    "thumbnail": "https://fastly.picsum.photos/id/142/4272/2848.jpg?hmac=z8IS_an6FQ8ijJOBd-wSVg1JTZbeIDG4TbjHwLQbs0I",
+    "thumbnail": "https://fastly.picsum.photos/id/16/2500/1667.jpg?hmac=uAkZwYc5phCRNFTrV_prJ_0rP0EdwJaZ4ctje2bY7aE",
     "saved": false,
     "year": 2022,
     "category": "TV Series",
-    "movieName": "Non-Popular TV Show 2",
+    "movieName": "MTV Hustle",
     "popular": false,
     "genre": "Family"
   },
   {
     "id": 22,
-    "thumbnail":"https://fastly.picsum.photos/id/142/4272/2848.jpg?hmac=z8IS_an6FQ8ijJOBd-wSVg1JTZbeIDG4TbjHwLQbs0I",
+    "thumbnail":"https://fastly.picsum.photos/id/17/2500/1667.jpg?hmac=HD-JrnNUZjFiP2UZQvWcKrgLoC_pc_ouUSWv8kHsJJY",
     "saved": false,
     "year": 2022,
     "category": "TV Series",
-    "movieName": "Non-Popular TV Show 3",
+    "movieName": " Lost In Space",
     "popular": false,
-    "genre": "Action"
+    "genre": "Action & Adventure"
   },
   {
     "id": 23,
-    "thumbnail": "https://fastly.picsum.photos/id/142/4272/2848.jpg?hmac=z8IS_an6FQ8ijJOBd-wSVg1JTZbeIDG4TbjHwLQbs0I",
+    "thumbnail": "https://fastly.picsum.photos/id/26/4209/2769.jpg?hmac=vcInmowFvPCyKGtV7Vfh7zWcA_Z0kStrPDW3ppP0iGI",
     "saved": false,
     "year": 2022,
     "category": "TV Series",
-    "movieName": "Comedy Series 1",
+    "movieName": "Secret Invasion",
     "popular": true,
     "genre": "Comedy"
   },
   {
     "id": 24,
-    "thumbnail": "https://fastly.picsum.photos/id/142/4272/2848.jpg?hmac=z8IS_an6FQ8ijJOBd-wSVg1JTZbeIDG4TbjHwLQbs0I",
+    "thumbnail": "https://fastly.picsum.photos/id/29/4000/2670.jpg?hmac=rCbRAl24FzrSzwlR5tL-Aqzyu5tX_PA95VJtnUXegGU",
     "saved": false,
     "year": 2022,
     "category": "TV Series",
-    "movieName": "Comedy Series 2",
+    "movieName": "Scoop",
     "popular": true,
     "genre": "Comedy"
   },
   {
     "id": 25,
-    "thumbnail": "https://fastly.picsum.photos/id/142/4272/2848.jpg?hmac=z8IS_an6FQ8ijJOBd-wSVg1JTZbeIDG4TbjHwLQbs0I",
+    "thumbnail": "https://fastly.picsum.photos/id/30/1280/901.jpg?hmac=A_hpFyEavMBB7Dsmmp53kPXKmatwM05MUDatlWSgATE",
     "saved": false,
-    "year": 2022,
+    "year": 2012,
     "category": "TV Series",
-    "movieName": "Family Series 1",
+    "movieName": "Aakhri Sach",
     "popular": true,
     "genre": "Family"
   },
   {
     "id": 26,
-    "thumbnail": "https://fastly.picsum.photos/id/142/4272/2848.jpg?hmac=z8IS_an6FQ8ijJOBd-wSVg1JTZbeIDG4TbjHwLQbs0I",
+    "thumbnail": "https://fastly.picsum.photos/id/33/5000/3333.jpg?hmac=h5NVRcUXmsWm612YQOroHSA5n9R7gxZgoP60LHBPHtw",
     "saved": false,
-    "year": 2022,
+    "year": 2020,
     "category": "TV Series",
-    "movieName": "Family Series 2",
+    "movieName": "Scam 2003",
     "popular": true,
     "genre": "Family"
   },
   {
     "id": 27,
-    "thumbnail": "https://fastly.picsum.photos/id/142/4272/2848.jpg?hmac=z8IS_an6FQ8ijJOBd-wSVg1JTZbeIDG4TbjHwLQbs0I",
+    "thumbnail": "https://fastly.picsum.photos/id/42/3456/2304.jpg?hmac=dhQvd1Qp19zg26MEwYMnfz34eLnGv8meGk_lFNAJR3g",
     "saved": false,
-    "year": 2022,
+    "year": 2021,
     "category": "TV Series",
-    "movieName": "Action Series 1",
+    "movieName": "Hostel Daze",
     "popular": true,
-    "genre": "Action"
+    "genre": "Action & Adventure"
   },
   {
     "id": 28,
-    "thumbnail":"https://fastly.picsum.photos/id/142/4272/2848.jpg?hmac=z8IS_an6FQ8ijJOBd-wSVg1JTZbeIDG4TbjHwLQbs0I",
+    "thumbnail":"https://fastly.picsum.photos/id/43/1280/831.jpg?hmac=glK-rQ0ppFClW-lvjk9FqEWKog07XkOxJf6Xg_cU9LI",
     "saved": false,
     "year": 2022,
     "category": "TV Series",
-    "movieName": "Action Series 2",
+    "movieName": "Aspirants",
     "popular": true,
-    "genre": "Action"
+    "genre": "Action & Adventure"
   },
   {
     "id": 29,
-    "thumbnail": "https://fastly.picsum.photos/id/142/4272/2848.jpg?hmac=z8IS_an6FQ8ijJOBd-wSVg1JTZbeIDG4TbjHwLQbs0I",
+    "thumbnail": "https://fastly.picsum.photos/id/46/3264/2448.jpg?hmac=ZHE8nk-Q9uRp4MxgKNvN7V7pYFvA-9BCv99ltY3HBv4",
     "saved": false,
     "year": 2022,
     "category": "TV Series",
-    "movieName": "Comedy Series 3",
+    "movieName": "Eye",
     "popular": false,
     "genre": "Comedy"
   },
   {
     "id": 30,
-    "thumbnail":"https://fastly.picsum.photos/id/142/4272/2848.jpg?hmac=z8IS_an6FQ8ijJOBd-wSVg1JTZbeIDG4TbjHwLQbs0I",
+    "thumbnail":"https://fastly.picsum.photos/id/48/5000/3333.jpg?hmac=y3_1VDNbhii0vM_FN6wxMlvK27vFefflbUSH06z98so",
     "saved": false,
     "year": 2022,
     "category": "TV Series",
-    "movieName": "Family Series 3",
+    "movieName": "Friends",
     "popular": false,
     "genre": "Family"
   },
   {
     "id": 31,
-    "thumbnail": "https://fastly.picsum.photos/id/142/4272/2848.jpg?hmac=z8IS_an6FQ8ijJOBd-wSVg1JTZbeIDG4TbjHwLQbs0I",
+    "thumbnail": "https://fastly.picsum.photos/id/49/1280/792.jpg?hmac=NnUJy0O9-pXHLmY2loqVs2pJmgw9xzuixgYOk4ALCXU",
     "saved": false,
     "year": 2022,
     "category": "TV Series",
-    "movieName": "Action Series 3",
+    "movieName": "Tamasha",
     "popular": false,
-    "genre": "Action"
+    "genre": "Action & Adventure"
+  },
+  {
+    "id": 32,
+    "thumbnail":"https://fastly.picsum.photos/id/55/4608/3072.jpg?hmac=ahGhylwdN52ULB37deeMZX6T_G7NiERtoPhwydMvUKQ",
+    "saved": false,
+    "year": 2022,
+    "category": "TV Series",
+    "movieName": " Kathron Ki Kiladi",
+    "popular": true,
+    "genre": "Documentry"
+  },
+  {
+    "id": 33,
+    "thumbnail": "https://fastly.picsum.photos/id/158/4836/3224.jpg?hmac=Gu_3j3HxZgR74iw1sV0wcwlnSZSeCi7zDWLcjblOp_c",
+    "saved": false,
+    "year": 2022,
+    "category": "Movie",
+    "movieName": "Barbie",
+    "popular": false,
+    "genre": "Fantasy"
+  },
+  {
+    "id": 34,
+    "thumbnail": "https://fastly.picsum.photos/id/159/5000/2460.jpg?hmac=h12oeFVhY4-vOrALaICJ4k4dqemWn1lvaMN8yvnIU1w",
+    "saved": false,
+    "year": 2022,
+    "category": "Movie",
+    "movieName": "Tommorow",
+    "popular": false,
+    "genre": "Drama"
+  },
+  {
+    "id": 35,
+    "thumbnail": "https://fastly.picsum.photos/id/149/3454/2288.jpg?hmac=JoHMBHymDuk59QWHK89nquWAXE4Su1mF07OKdvmpN3g",
+    "saved": false,
+    "year": 2022,
+    "category": "Movie",
+    "movieName": "Vacation Friends",
+    "popular": false,
+    "genre": "Adventure"
+  },
+  {
+    "id": 36,
+    "thumbnail": "https://fastly.picsum.photos/id/152/3888/2592.jpg?hmac=M1xv1MzO9xjf5-tz1hGR9bQpNt973ANkqfEVDW0-WYU",
+    "saved": false,
+    "year": 2022,
+    "category": "Movie",
+    "movieName": "The Vampire Diaries",
+    "popular": false,
+    "genre": "Horror"
+  },
+  {
+    "id": 37,
+    "thumbnail": "https://fastly.picsum.photos/id/142/4272/2848.jpg?hmac=z8IS_an6FQ8ijJOBd-wSVg1JTZbeIDG4TbjHwLQbs0I",
+    "saved": false,
+    "year": 2022,
+    "category": "Movie",
+    "movieName": "Black Bird",
+    "popular": true,
+    "genre": "Crime"
+  },
+  {
+    "id": 38,
+    "thumbnail": "https://fastly.picsum.photos/id/143/3600/2385.jpg?hmac=gSMmnYrmuP5BJ47kmErfYdYu1L1GLePM1SNm-D2lqiA",
+    "saved": false,
+    "year": 2022,
+    "category": "Movie",
+    "movieName": "The Empire",
+    "popular": true,
+    "genre": "History"
+  },
+  {
+    "id": 39,
+    "thumbnail": "https://fastly.picsum.photos/id/159/5000/2460.jpg?hmac=h12oeFVhY4-vOrALaICJ4k4dqemWn1lvaMN8yvnIU1w",
+    "saved": false,
+    "year": 2022,
+    "category": "Movie",
+    "movieName": "The Last ship",
+    "popular": false,
+    "genre": "Music"
+  },
+  {
+    "id": 40,
+    "thumbnail": "https://fastly.picsum.photos/id/163/2000/1333.jpg?hmac=htdHeSJwlYOxS8b0TTpz2s8tD_QDlmsd3JHYa_HGrg8",
+    "saved": false,
+    "year": 2022,
+    "category": "Movie",
+    "movieName": "Bahubali-part1",
+    "popular": false,
+    "genre": "History"
+  },
+  {
+    "id": 41,
+    "thumbnail": "https://fastly.picsum.photos/id/158/4836/3224.jpg?hmac=Gu_3j3HxZgR74iw1sV0wcwlnSZSeCi7zDWLcjblOp_c",
+    "saved": false,
+    "year": 2022,
+    "category": "Movie",
+    "movieName": "Barbie",
+    "popular": false,
+    "genre": "Animation"
+  },
+  {
+    "id": 42,
+    "thumbnail":"https://fastly.picsum.photos/id/142/4272/2848.jpg?hmac=z8IS_an6FQ8ijJOBd-wSVg1JTZbeIDG4TbjHwLQbs0I",
+    "saved": false,
+    "year": 2022,
+    "category": "Movie",
+    "movieName": " Theri",
+    "popular": true,
+    "genre": "Documentry"
+  },
+  {
+    "id": 43,
+    "thumbnail":"https://fastly.picsum.photos/id/142/4272/2848.jpg?hmac=z8IS_an6FQ8ijJOBd-wSVg1JTZbeIDG4TbjHwLQbs0I",
+    "saved": false,
+    "year": 2022,
+    "category": "TV Series",
+    "movieName": " Bigg boss",
+    "popular": true,
+    "genre": "News"
+  },
+  {
+    "id": 44,
+    "thumbnail": "https://fastly.picsum.photos/id/158/4836/3224.jpg?hmac=Gu_3j3HxZgR74iw1sV0wcwlnSZSeCi7zDWLcjblOp_c",
+    "saved": false,
+    "year": 2022,
+    "category": "TV Series",
+    "movieName": "Legend",
+    "popular": false,
+    "genre": "Kids"
+  },
+  {
+    "id": 45,
+    "thumbnail": "https://fastly.picsum.photos/id/159/5000/2460.jpg?hmac=h12oeFVhY4-vOrALaICJ4k4dqemWn1lvaMN8yvnIU1w",
+    "saved": false,
+    "year": 2022,
+    "category": "TV Series",
+    "movieName": "Extrodinary You",
+    "popular": false,
+    "genre": "Drama"
+  },
+  {
+    "id": 46,
+    "thumbnail": "https://fastly.picsum.photos/id/149/3454/2288.jpg?hmac=JoHMBHymDuk59QWHK89nquWAXE4Su1mF07OKdvmpN3g",
+    "saved": false,
+    "year": 2022,
+    "category": "TV Series",
+    "movieName": "Kingdom",
+    "popular": false,
+    "genre": "Action & Adventure"
+  },
+  {
+    "id": 47,
+    "thumbnail": "https://fastly.picsum.photos/id/152/3888/2592.jpg?hmac=M1xv1MzO9xjf5-tz1hGR9bQpNt973ANkqfEVDW0-WYU",
+    "saved": false,
+    "year": 2022,
+    "category": "TV Series",
+    "movieName": "1899",
+    "popular": false,
+    "genre": "Mystery"
+  },
+  {
+    "id": 48,
+    "thumbnail": "https://fastly.picsum.photos/id/142/4272/2848.jpg?hmac=z8IS_an6FQ8ijJOBd-wSVg1JTZbeIDG4TbjHwLQbs0I",
+    "saved": false,
+    "year": 1982,
+    "category": "TV Series",
+    "movieName": "Peaky Blinders",
+    "popular": true,
+    "genre": "Crime"
+  },
+  {
+    "id": 49,
+    "thumbnail": "https://fastly.picsum.photos/id/143/3600/2385.jpg?hmac=gSMmnYrmuP5BJ47kmErfYdYu1L1GLePM1SNm-D2lqiA",
+    "saved": false,
+    "year": 2022,
+    "category": "TV Series",
+    "movieName": "The Batman",
+    "popular": true,
+    "genre": "Kids"
+  },
+  {
+    "id": 50,
+    "thumbnail": "https://fastly.picsum.photos/id/159/5000/2460.jpg?hmac=h12oeFVhY4-vOrALaICJ4k4dqemWn1lvaMN8yvnIU1w",
+    "saved": false,
+    "year": 2022,
+    "category": "TV Series",
+    "movieName": "V Wars",
+    "popular": false,
+    "genre": "Sci-Fi & Fantasy"
+  },
+  {
+    "id": 51,
+    "thumbnail": "https://fastly.picsum.photos/id/163/2000/1333.jpg?hmac=htdHeSJwlYOxS8b0TTpz2s8tD_QDlmsd3JHYa_HGrg8",
+    "saved": false,
+    "year": 2022,
+    "category": "TV Series",
+    "movieName": "Money Heist",
+    "popular": true,
+    "genre": "Action & Adventure"
+  },
+  {
+    "id": 52,
+    "thumbnail": "https://fastly.picsum.photos/id/158/4836/3224.jpg?hmac=Gu_3j3HxZgR74iw1sV0wcwlnSZSeCi7zDWLcjblOp_c",
+    "saved": false,
+    "year": 2022,
+    "category": "TV Series",
+    "movieName": "Bleach",
+    "popular": false,
+    "genre": "Animation"
+  },
+  {
+    "id": 53,
+    "thumbnail":"https://fastly.picsum.photos/id/142/4272/2848.jpg?hmac=z8IS_an6FQ8ijJOBd-wSVg1JTZbeIDG4TbjHwLQbs0I",
+    "saved": false,
+    "year": 2022,
+    "category": "Movie",
+    "movieName": " Avtar",
+    "popular": true,
+    "genre": "Documentry"
+  },
+  {
+    "id": 54,
+    "thumbnail": "https://fastly.picsum.photos/id/152/3888/2592.jpg?hmac=M1xv1MzO9xjf5-tz1hGR9bQpNt973ANkqfEVDW0-WYU",
+    "saved": false,
+    "year": 2022,
+    "category": "TV Series",
+    "movieName": "Roadies",
+    "popular": false,
+    "genre": "Reality"
+  },
+  {
+    "id": 55,
+    "thumbnail": "https://fastly.picsum.photos/id/152/3888/2592.jpg?hmac=M1xv1MzO9xjf5-tz1hGR9bQpNt973ANkqfEVDW0-WYU",
+    "saved": false,
+    "year": 2013,
+    "category": "TV Series",
+    "movieName": "Dance India Dance",
+    "popular": false,
+    "genre": "Reality"
   }
-
 ]

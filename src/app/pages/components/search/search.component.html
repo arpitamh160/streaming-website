@@ -1,0 +1,39 @@
+<app-search-bar [placeholderText]="'Search for movies and TV series'"></app-search-bar>
+<div class="search-container">
+    <p class="movie-heading">Found {{ movieResults.length + tvResults.length }} results for '{{
+        searchQuery }}'</p>
+    <div *ngIf="movieResults && movieResults.length" class="vertical-display">
+        <div *ngFor="let item of movieResults">
+            <a [routerLink]="['/home', 'movie-details', item.id]">
+                <img [src]="'https://image.tmdb.org/t/p/w500/' + item.poster_path" alt="{{ item.title }} Thumbnail"
+                    class="media-image">
+            </a>
+            <img [src]="isBookmarkedMovie(item.id) ? '/assets/images/bookmarked.svg' : '/assets/images/bookmark-icon.svg'"
+                (click)="toggleBookmarkMovie(item)" class="vertical-display-bookmark" />
+            <div class="carousel-media-details">
+                {{ getYearFromDate(item.release_date) }}
+                <span class="dot">.</span>
+                <img src="/assets/images/movie.svg" alt="movie-image" class="media-logo">
+                {{ item.media_type }}
+            </div>
+            <h2 class="media-name">{{ item.title }}</h2>
+        </div>
+    </div>
+    <div *ngIf="tvResults && tvResults.length" class="vertical-display">
+        <div *ngFor="let item of tvResults">
+            <a [routerLink]="['/home', 'tv-details', item.id]">
+                <img [src]="'https://image.tmdb.org/t/p/w500/' + item.poster_path" alt="{{ item.title }} Thumbnail"
+                    class="media-image">
+            </a>
+            <img [src]="isBookmarkedTv(item.id) ? '/assets/images/bookmarked.svg' : '/assets/images/bookmark-icon.svg'"
+                (click)="toggleBookmarkTv(item)" class="vertical-display-bookmark" />
+            <div class="carousel-media-details">
+                {{ getYearFromDate(item.first_air_date) }}
+                <span class="dot">.</span>
+                <img src="/assets/images/movie.svg" alt="movie-image" class="media-logo">
+                {{ item.media_type }}
+            </div>
+            <h2 class="media-name">{{ item.name }}</h2>
+        </div>
+    </div>
+</div>

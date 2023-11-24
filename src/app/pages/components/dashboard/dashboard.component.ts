@@ -1,28 +1,66 @@
-import { Component} from '@angular/core';
-import { MoviesService, Movie } from 'src/app/shared/services/movies-service/movies.service';
+import { Component, OnInit, OnDestroy } from '@angular/core';
+import { DashboardService, MovieContent, TvContent } from 'src/app/pages/services/dashboard/dashboard.service';
+import { Subscription } from 'rxjs';
+
 @Component({
   selector: 'app-dashboard',
   templateUrl: './dashboard.component.html',
   styleUrls: ['./dashboard.component.scss']
 })
-export class DashboardComponent {
-  trendingMovies: Movie[] = [];
-  popularMovies: Movie[] = [];
-  trendingTVSeries: Movie[] = [];
-  popularTVSeries: Movie[] = [];
+export class DashboardComponent implements OnInit, OnDestroy {
+  trendingMovies: MovieContent[] = [];
+  popularMovies: MovieContent[] = [];
+  trendingTVSeries: TvContent[] = [];
+  popularTVSeries: TvContent[] = [];
+  subscriptions: Subscription[] = [];
 
-  constructor(private movieService: MoviesService) {
-    this.movieService.getMovies().subscribe((movies) => {
-      this.trendingMovies = movies.filter((movie) => movie.category === 'Movie');
-      this.popularMovies = movies.filter((movie) => movie.category === 'Movie' && movie.popular === true);
-      this.trendingTVSeries = movies.filter((movie) => movie.category === 'TV Series');
-      this.popularTVSeries = movies.filter((movie) => movie.category === 'TV Series' && movie.popular === true);
-      console.log(this.trendingMovies);
-      console.log(this.popularMovies);
-      console.log(this.trendingTVSeries);
-      console.log(this.popularTVSeries);
-    });
+  constructor(private service: DashboardService) { }
+
+  ngOnInit(): void {
+    this.subscriptions.push(
+      this.service.getTrendingMovies().subscribe({
+        next: (data: any) => {
+          this.trendingMovies = data.results;
+          console.log("trending-movie", this.trendingMovies);
+        },
+        error: (error: any) => {
+          console.error('Error fetching trending movies', error);
+        }
+      }),
+
+      this.service.getPopularMovies().subscribe({
+        next: (data: any) => {
+          this.popularMovies = data.results;
+          console.log("popular-movie", this.popularMovies);
+        },
+        error: (error: any) => {
+          console.error('Error fetching popular movies', error);
+        }
+      }),
+
+      this.service.getTrendingTvSeries().subscribe({
+        next: (data: any) => {
+          this.trendingTVSeries = data.results;
+          console.log("trending-tv", this.trendingTVSeries);
+        },
+        error: (error: any) => {
+          console.error('Error fetching trending tv series', error);
+        }
+      }),
+
+      this.service.getPopularTvSeries().subscribe({
+        next: (data: any) => {
+          this.popularTVSeries = data.results;
+          console.log("popular-tv", this.trendingTVSeries);
+        },
+        error: (error: any) => {
+          console.error('Error fetching popular tv series', error);
+        }
+      })
+    );
   }
 
-
+  ngOnDestroy(): void {
+    this.subscriptions.forEach(subscription => subscription.unsubscribe());
+  }
 }

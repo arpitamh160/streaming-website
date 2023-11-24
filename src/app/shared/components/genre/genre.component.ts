@@ -1,17 +1,21 @@
-import { Component,Output, EventEmitter } from '@angular/core';
-
+import { Component, Input } from '@angular/core';
+import { Router } from '@angular/router';
+import { MovieGenre } from 'src/app/pages/services/movie-genre/movie-genre.service';
+import { TvGenre } from 'src/app/pages/services/tv-genre/tv-genre.service';
 @Component({
   selector: 'app-genre',
   templateUrl: './genre.component.html',
-  styleUrls: ['./genre.component.scss']
+  styleUrls:['./genre.component.scss']
 })
 export class GenreComponent {
-  movieGenre: string[] = ["Action", "Adventure", "Animation", "Comedy", "Crime", "Documentary", "Drama", "Family", "Fantasy", "History", "Horror", "Music"];
+  @Input() movie: MovieGenre[] =[];
+  @Input() tv: TvGenre[] =[];
+  @Input() category: string='';
+  @Input() genreColors: string[] = [];
 
-  @Output() genreSelected = new EventEmitter<string>();
 
-  filterByGenre(genre: string) {
-   
-  }
-  
+  constructor(private router: Router) {}
+
 }
+
+

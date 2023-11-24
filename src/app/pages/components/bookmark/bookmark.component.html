@@ -1,4 +1,40 @@
-<app-search-bar  [placeholderText]="'Search for movies or TV series'" class="search-bar"></app-search-bar>
-<div class="bookmark">
-    <app-carousel [movieList]="bookmarkedMovies"></app-carousel>
+<app-search-bar [placeholderText]="'Search for movies or TV series'"></app-search-bar>
+<div class="bookmark-container">
+  <h1 class="movie-heading">Bookmarked Movies</h1>
+  <div class="vertical-display">
+    <div *ngFor="let movie of bookmarkedMovie$ | async; let i = index" class="display-bookmark">
+      <img [src]="isBookmarkedMovie(movie.id) ? '/assets/images/bookmarked.svg' : '/assets/images/bookmark-icon.svg'"
+        (click)="toggleBookmarkMovie(movie)" class="vertical-display-bookmark" />
+      <a [routerLink]="['/home', 'movie-details', movie.id]">
+        <img [src]="'https://image.tmdb.org/t/p/w500/' + movie.poster_path" alt="{{ movie.title }} Thumbnail"
+          class="media-image">
+      </a>
+      <div class="carousel-media-details">
+        {{ getYearFromDate(movie.release_date) }}
+        <span class="dot">.</span>
+        <img src="/assets/images/movie.svg" alt="movie-image" class="media-logo">
+        <span>Movie</span>
+      </div>
+      <h2 class="media-name">{{ movie.title }}</h2>
+    </div>
+  </div>
+
+  <h1 class="movie-heading">Bookmarked TV Shows</h1>
+  <div class="vertical-display">
+    <div *ngFor="let tv of bookmarkedTv$ | async; let i = index" class="display-bookmark">
+      <img [src]="isBookmarkedTv(tv.id) ? '/assets/images/bookmarked.svg' : '/assets/images/bookmark-icon.svg'"
+        (click)="toggleBookmarkTv(tv)" class="vertical-display-bookmark" />
+      <a [routerLink]="['/home', 'tv-details', tv.id]">
+        <img [src]="'https://image.tmdb.org/t/p/w500/' + tv.poster_path" alt="{{ tv.name }} Thumbnail"
+          class="media-image">
+      </a>
+      <div class="carousel-media-details">
+        {{ getYearFromDate(tv.first_air_date) }}
+        <span class="dot">.</span>
+        <img src="/assets/images/tv-series.svg" alt="movie-image" class="media-logo">
+        <span>Tv</span>
+      </div>
+      <h2 class="media-name">{{ tv.name}}</h2>
+    </div>
+  </div>
 </div>

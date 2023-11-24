@@ -1,0 +1,10 @@
+.no-result {
+  padding: 7rem 0;
+  height: 67vh;
+}
+
+@media screen and (max-width: 1024px) {
+  .no-result {
+    padding: 9rem 0;
+  }
+}

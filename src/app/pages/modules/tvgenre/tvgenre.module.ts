@@ -4,6 +4,8 @@ import { TvgenreComponent } from '../../components/tvgenre/tvgenre.component';
 import { TvgenreRoutingModule } from './tvgenre-routing.module';
 import { SearchBarModule } from 'src/app/shared/modules/search-bar/search-bar.module';
 import { GenreModule } from 'src/app/shared/modules/genre/genre.module';
+import { GenreListModule } from '../genre-list/genre-list.module';
+
 @NgModule({
   declarations: [
     TvgenreComponent
@@ -12,10 +14,8 @@ import { GenreModule } from 'src/app/shared/modules/genre/genre.module';
     CommonModule,
     TvgenreRoutingModule,
     SearchBarModule,
-    GenreModule
-  ],
-  exports: [
-    TvgenreComponent
+    GenreModule,
+    GenreListModule
   ]
 })
 export class TvgenreModule { }
